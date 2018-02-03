@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lesson 2</string>
+    <string name="Header1">Makan Malam</string>
+    <string name="Header2">dengan Milea</string>
+    <string name="editText1">Menu</string>
+    <string name="editText2">Porsi</string>
+    <string name="button1">EATBUS</string>
+    <string name="button2">UPNORMAL</string>
+    <string name="Header3">Nama Tempat</string>
 </resources>
