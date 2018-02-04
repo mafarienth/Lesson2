@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //1. Mendeklarasikan Variabel variabel yang dibutuhkan
     EditText editText_menu, editText_porsi;
     TextView textView_tempat, textView_menu, textView_porsi, textView_harga;
     Button bEatbus, bAbnormal;
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //2. gunakan findViewByID untuk mendapatkan referensi tentang contoh EditText, Textview dan Button
+        // menetapkannya ke variabel privat
 
         editText_menu = (EditText) findViewById(R.id.editTextMenu);
         editText_porsi = (EditText) findViewById(R.id.editTextPorsi);
@@ -31,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void eatbus(View view) {
+        //3. Buat Intent eksplisit baru, untuk menuju ke second activity
         Intent intent = new Intent(this, SecondActivity.class);
+
+        //4. Deklarasikan variabel uang yang dimiliki Osas, nama tempat makan, menu dan porsi
+        //lalu masukkan intent put Extra untuk memasukkan pesan di intent
+
         int uang = 65500;
         String uOsas = String.valueOf(uang);
         intent.putExtra("uOsas", uOsas);

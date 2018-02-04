@@ -14,6 +14,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        //5. Get Intent digunakan untuk mengambil intent yang dikirim di activity sebelumnya
         Intent intent = getIntent();
         String tempat = intent.getStringExtra("namaTempat");
 
@@ -22,9 +23,10 @@ public class SecondActivity extends AppCompatActivity {
 
         Intent intent3 = getIntent();
         String porsi = intent3.getStringExtra("porsi");
-        int totalPorsi = Integer.parseInt(porsi);
 
+        int totalPorsi = Integer.parseInt(porsi);
         Intent intent4 = getIntent();
+
         String uangOsas = intent4.getStringExtra("uOsas");
         int uang = Integer.parseInt(uangOsas);
 
